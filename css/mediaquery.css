@@ -1,0 +1,27 @@
+/* styles for started min 280 and max widths 480*/
+@media-screen and (min-width: 280px) and (max-width: 479px){
+
+}
+/* styles ended for min 280 and max widths 480*/
+
+
+
+/* styles for started min 480px and max widths 749px*/
+@media-screen and (min-width: 480px) and (max-width: 749px){
+
+}
+/* styles ended for min 480px and max widths 749px*/
+
+
+/* styles for started for min 750px and max widths 969px*/
+@media-screen and (min-width: 750px) and (max-width: 969px){
+
+}
+/* styles ended for min 750px and max widths 969px*/
+
+
+/* styles for started min  970px*/
+@media-screen and (max-width: 1170px) {
+
+}
+/* styles ended for min  970px*/

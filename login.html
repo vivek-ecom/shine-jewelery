@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e jewelery</title>
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <link rel="stylesheet" href="font-awesome-4.3.0\css\font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css"></link>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <script src="js/jquery.form-validator.min.js"></script>
+    <script src="js/jquery.form-validator.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+      <script src="js/security.js"></script>
+
+ 
+  <script>
+    var currentPage="index";
+    </script>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+           
+          </div>
+          <div class="col-sm-8">
+           <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                 <li><a href="My Account.html"><i class="fa fa-user"></i> My Account</a></li>
+                <li><a href="login.html"><span>Hi,&nbsp</span>Sign Up/Sign In</a></li>
+             
+                <!--  <li><a href=""><i class="fa fa-unlock-alt"></i>Hi Chris</a></li> -->
+                     <li><a href=""><i class="fa fa fa-bell"></i></a></li>
+                     <li><a href="track order.html"><i class="fa fa fa-bell"></i>Track order</a></li>
+              <li><a href=""><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>
+              
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/header_top-->
+    <div class="header-middle"><!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/Shine_logo.png" class="img-responsive" width="120px"/></a>
+            </div>
+                     </div>
+                     <div class="col-sm-2">  <select id="selectField" class="form-group form-control"style="margin-bottom:0px">
+
+         <option value="option1">Select Category</option>
+        <option value="option2">Ladies jewelry</option>
+        <option value="option2">Mens</option>
+        <option value="option2">Children</option>
+        <option value="option2">Personalised</option>
+        <option value="option2">Watches</option>
+        <option value="option2">Brand Jewelry</option>
+          </select>
+
+                     </div>
+          <div class="col-sm-4">
+                       <div class="input-group">
+
+                        <input type="text" class="form-control" placeholder="What are you searching for" id="query" name="query" value="">
+                          <div class="input-group-btn">
+                              <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search">&nbspSEARCH</span>
+                              </button>
+                          </div>
+
+              </div>
+          </div>
+       <!-- Shopping Cart Starts -->
+          <div class="col-sm-3">
+            <div id="cart" class="btn-group btn-block">
+              <button type="button" data-toggle="dropdown" class="btn btn-block btn-lg dropdown-toggle">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="hidden-md">Cart:</span> 
+                <span id="cart-total">0 item(s)</span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  Your Cart is empty
+                </li>                 
+              </ul>
+            </div>
+          </div>
+        <!-- Shopping Cart Ends -->
+      </div>
+
+    </div><!--/header-middle-->
+
+
+
+
+
+    <div class="header-bottom"><!--header-bottom-->
+      <div class="container">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!-- <div class="navbar-header"> -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <!-- </div> -->
+
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse" id="mainnav">
+
+          <li class="dropdown" id="jewellery">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jewellery <span class="caret"></span></a>
+          
+            <div class="sub-menu jewellery">
+            <div class="row">
+            <div class="col-lg-4 sub-menu-block">
+
+            <ul>
+            <li><a href="#">Ladies jewellery</a></li>
+            <li><a href="#">Mens jewellery</a></li>
+            <li><a href="#">Childrens jewellery</a></li>
+            <li><a href="#">Pre Wedding Rings</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">Lockets</a></li>
+            <li><a href="#">Hair ornaments</a></li>
+            <li><a href="#">Armlets</a></li>
+            <li><a href="#">Bangles</a></li>
+            <li><a href="#">Pendants</a></li>
+            </ul>
+            </div><!-- lg-4 closed -->
+              
+              <div class="col-lg-3 promo1">
+              <img src="images/promo2.jpg" width="80%">
+              <h4 class="menu-h4"><a>Ladies Collections</a></h4>
+            </div><!-- lg-3 closed -->
+             <div class="col-lg-3 promo">
+              <img src="images/promoDiamonds.jpg" width="80%">
+              <h4 class="menu-h4"><a>Mens Collections</a></h4>
+            </div><!-- lg-3 closed -->
+              <div class="col-lg-3 promo">
+              <img src="images/promo2.jpg" width="80%">
+              <h4 class="menu-h4"><a>Bridal Collections</a></h4>
+              </div><!-- lg-3 closed -->
+            <div class="col-lg-8 promo3">
+            <img src="images/you may also like/205119-medium_default.jpg" alt="" /> </a>
+             <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+              <img src="images/you may also like/568335-medium_default.jpg" alt="" /> </a>
+               <img src="images/you may also like/148697-medium_default.jpg" alt="" /> </a>
+                <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                 <img src="images/you may also like/23743-medium_default.jpg" alt="" /> </a>
+                  <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                   <img src="images/you may also like/565433-medium_default.jpg" alt="" /> </a>
+
+            </div>
+
+            </div><!-- rowClosed -->
+            </div>
+        
+        </li>
+
+            <li class="dropdown" id="watches">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Watches <span class="caret"></span></a>
+
+            <div class="sub-menu watches">
+            <div class="row">
+            <div class="col-lg-4 sub-menu-block">
+
+            <ul>
+            <li><a href="#">Mens Watches</a></li>
+            <li><a href="#">Ladies Watches</a></li>
+            <li><a href="#">Childrens Watches</a></li>
+            <li><a href="#">Wedding Watches</a></li>
+            </ul>
+            </div><!-- lg-4 closed -->
+
+                         <div class="col-lg-3 promo1">
+              <img src="images/watches/watch_preview1.png" width="80%">
+              <h4 class="menu-h4"><a>Mens Watches</a></h4>
+            </div><!-- lg-3 closed -->
+             <div class="col-lg-3 promo">
+              <img src="images/watches/watch_preview2.png" width="80%">
+              <h4 class="menu-h4"><a>Ladies Watches</a></h4>
+            </div><!-- lg-3 closed -->
+              <div class="col-lg-3 promo">
+              <img src="images/watches/watch_preview3.png" width="80%">
+              <h4 class="menu-h4"><a>Bridal Watches</a></h4>
+              </div><!-- lg-3 closed -->
+            <div class="col-lg-8 promo3">
+            <img src="images/watches/watch_small_preview1.png" alt="" /> </a>
+             <img src="images/watches/watch_small_preview2.png" alt="" /> </a>
+              <img src="images/watches/watch_small_preview3.png" alt="" /> </a>
+            <img src="images/watches/watch_small_preview1.png" alt="" /> </a>
+             <img src="images/watches/watch_small_preview2.png" alt="" /> </a>
+              <img src="images/watches/watch_small_preview3.png" alt="" /> </a>
+         <img src="images/watches/watch_small_preview1.png" alt="" /> </a>
+             <img src="images/watches/watch_small_preview2.png" alt="" /> </a>
+            
+
+            </div>
+            </div><!-- sub-menu -->
+
+              </li>
+
+        <li class="dropdown" id="personalised">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Personalised <span class="caret"></span></a>
+
+          <div class="sub-menu personalised">
+            <div class="row">
+            <div class="col-lg-4 sub-menu-block">
+             
+           <ul>
+           <li><a href="#">Personalised wedding rings</a></li>
+           <li><a href="#">Personalised Bracelets</a></li>
+           <li><a href="#">Personalised Rings</a></li>
+           <li><a href="#">Personalised Pendants</a></li>
+           <li><a href="#">Personalised Ear rings</a></li>
+           </ul>
+            </div><!-- lg-4 closed -->
+    <div class="col-lg-3 promo1">
+              <img src="images/personalised/personalised_preview1.png" width="80%">
+              <h4 class="menu-h4"><a>Ladies Collections</a></h4>
+            </div><!-- lg-3 closed -->
+             <div class="col-lg-3 promo">
+              <img src="images/personalised/personalised_preview2.png" width="80%">
+              <h4 class="menu-h4"><a>Mens Collections</a></h4>
+            </div><!-- lg-3 closed -->
+              <div class="col-lg-3 promo">
+              <img src="images/personalised/personalised_preview3.png" width="80%">
+              <h4 class="menu-h4"><a>Bridal Collections</a></h4>
+              </div><!-- lg-3 closed -->
+            <div class="col-lg-8 promo3">
+            <img src="images//personalised/personalised_small_preview1.png" alt="" /> </a>
+             <img src="images//personalised/personalised_small_preview2.png" alt="" /> </a>
+                  <img src="images//personalised/personalised_small_preview1.png" alt="" /> </a>
+             <img src="images//personalised/personalised_small_preview2.png" alt="" /> </a>
+                  <img src="images//personalised/personalised_small_preview1.png" alt="" /> </a>
+             <img src="images//personalised/personalised_small_preview2.png" alt="" /> </a>
+                  <img src="images//personalised/personalised_small_preview1.png" alt="" /> </a>
+             <img src="images//personalised/personalised_small_preview2.png" alt="" /> </a>
+           
+
+            </div>
+            </div><!-- rowClosed -->
+            </div><!-- sub-menu -->
+
+              </li>
+
+
+          <li class="dropdown" id="occational">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Occasional <span class="caret"></span></a>
+
+          <div class="sub-menu occational" style="display:none;">
+          <div class="row">
+          <div class="col-lg-4 sub-menu-block">
+          
+           <ul>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            </ul>
+            </div><!-- lg-4 closed -->
+    <div class="col-lg-3 promo1">
+              <img src="images/occassional/occassional_preview1.png" width="80%">
+              <h4 class="menu-h4"><a>Ladies Collections</a></h4>
+            </div><!-- lg-3 closed -->
+             <div class="col-lg-3 promo">
+              <img src="images/occassional/occassional_preview2.png" width="80%">
+              <h4 class="menu-h4"><a>Mens Collections</a></h4>
+            </div><!-- lg-3 closed -->
+              <div class="col-lg-3 promo">
+              <img src="images/occassional/occassional_preview3.png" width="80%">
+              <h4 class="menu-h4"><a>Bridal Collections</a></h4>
+              </div><!-- lg-3 closed -->
+            <div class="col-lg-8 promo3">
+            <img src="images/you may also like/205119-medium_default.jpg" alt="" /> </a>
+             <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+              <img src="images/you may also like/568335-medium_default.jpg" alt="" /> </a>
+               <img src="images/you may also like/148697-medium_default.jpg" alt="" /> </a>
+                <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                 <img src="images/you may also like/23743-medium_default.jpg" alt="" /> </a>
+                  <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                   <img src="images/you may also like/565433-medium_default.jpg" alt="" /> </a>
+
+            </div>
+            </div><!-- rowClosed -->
+            </div><!-- sub-menu -->
+            </li>
+
+
+        <li class="dropdown" id="brands">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Brands <span class="caret"></span></a>
+
+          <div class="sub-menu brands">
+          <div class="row">
+          <div class="col-lg-4 sub-menu-block">
+          <!--  style="display:none;" -->
+           <ul>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            </ul>
+            </div><!-- lg-4 closed -->
+
+                <div class="col-lg-3 promo1">
+              <img src="images/promo2.jpg" width="80%">
+              <h4 class="menu-h4"><a>Ladies Collections</a></h4>
+            </div><!-- lg-3 closed -->
+             <div class="col-lg-3 promo">
+              <img src="images/promoDiamonds.jpg" width="80%">
+              <h4 class="menu-h4"><a>Mens Collections</a></h4>
+            </div><!-- lg-3 closed -->
+              <div class="col-lg-3 promo">
+              <img src="images/promo2.jpg" width="80%">
+              <h4 class="menu-h4"><a>Bridal Collections</a></h4>
+              </div><!-- lg-3 closed -->
+            <div class="col-lg-8 promo3">
+            <img src="images/you may also like/205119-medium_default.jpg" alt="" /> </a>
+             <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+              <img src="images/you may also like/568335-medium_default.jpg" alt="" /> </a>
+               <img src="images/you may also like/148697-medium_default.jpg" alt="" /> </a>
+                <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                 <img src="images/you may also like/23743-medium_default.jpg" alt="" /> </a>
+                  <img src="images/you may also like/111409-medium_default.jpg" alt="" /> </a>
+                   <img src="images/you may also like/565433-medium_default.jpg" alt="" /> </a>
+
+            </div>
+            </div><!-- rowClosed -->
+            </div><!-- sub-menu -->
+        </li>
+
+        </ul>
+       </div>
+         
+       </div>
+      </div>
+    </div><!--/header-bottom-->
+  </header>
+<div class="container ">
+<div class="col-lg-12 my_login">
+   <div class="col-lg-6 my_signup">   
+        <div id="signupbox">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><!-- <a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a> --></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-4 control-label">Username<span class="redMark">*</span></label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="firstname" placeholder="Enter username" required>
+                                    </div>
+                                </div>
+                            <!--     <div class="form-group">
+                                <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div> -->
+                                <div class="form-group">
+                                    <label for="password" class="col-md-4 control-label">Password<span class="redMark">*</span></label>
+                                    <div class="col-md-8">
+                                      
+                                 <input type="password" name="pass_confirmation" class="form-control" placeholder="Enter password" required>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="password" name=""class="col-md-4 control-label">Verify Password<span class="redMark">*</span></label>
+                                    <div class="col-md-8">
+                                   <input type="password" name="pass" class="form-control" placeholder="Re enter password"data-validation="confirmation" required>
+                                  </div>
+                                
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="email" class="col-md-4 control-label">Email<span class="redMark">*</span></label>
+                                    <div class="col-md-8">
+                                       <input type="email" class="form-control" name="email" placeholder="Valid email id" required></div>
+                                   
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-4 col-md-8">
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                    </div>
+                                </div>
+                                
+                              
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
+    </div>
+    
+	    <div class="col-lg-6 my_signin">    
+        <div id="loginbox">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px;     padding-bottom: 0px;" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 15px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username" required>                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 10px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password" required>
+                                    </div>
+                                    
+                          
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                               <div class="col-sm-12 controls" style=" margin-left: 15px;ssssss">
+    
+                                       <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Log In</button>
+                                     
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                      <!--   <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                          Don't have an account! 
+                                      <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                          Sign Up Here
+                                      </a>
+                                      </div> -->
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+      </div>
+      
+</div>
+
+
+</div>
+
+<script>
+
+/*  $.validate({
+    modules : 'location, date, security, file',
+  });
+  */
+$.validate({
+  modules : 'security',
+  onModulesLoaded : function() {
+    var optionalConfig = {
+      fontSize: '12pt',
+      padding: '4px',
+      bad : 'Very bad',
+      weak : 'Weak',
+      good : 'Good',
+      strong : 'Strong'
+    };
+
+    $('input[name="pass_confirmation"]').displayPasswordStrength(optionalConfig);
+  }
+
+});
+
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#signupform" ).validate({
+  rules: {
+    field: {
+      required: true
+     
+    }
+  }
+});
+
+
+</script>
+
+
+        <section id="footer">
+
+  <div class="container" style=" margin-top: 10px;">
+  <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12" >
+       <a><p>Terms & Conditions</p></a>
+      <a><p>Return & Exchanges</p></a>
+  </div>
+    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+       <a><p>Credit Cards</p></a>
+        <a><p>Order Status</p></a>
+     </div>
+    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+      <a><p>Shipping Info</p></a>
+      <a><p>Site Map</p></a>
+     </div>
+    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+     
+      <a><p>Contact Us</p></a>
+      <a><p>About Us</p></a>
+  </div>
+  <div id="subfooter">
+  <div class="col-lg-12 col-md-8  col-sm-12 col-xs-12">
+<img src="images/social.png">
+  </div>
+</div>
+
+   <div id="subfooter1">
+  <div class="col-lg-12 col-md-8  col-sm-12 col-xs-12">
+    <p class="text-center">All Right Reserved 2005.</p>
+  </div>
+</div>
+</body>
+</html>
