@@ -1462,3 +1462,73 @@ opacity: 0;
   border-radius: 5px;
   display: none;
 }
+.order-details-table{
+    text-align: right;
+  width: 90%
+}
+.order-details-table td{
+    width: 85%;
+}
+/* .item-table{
+  width: 50%;
+} */
+.order-details{
+  padding: 0;
+}
+.innerBadge {
+
+padding: 5px;
+float: left;
+border-bottom: 3px solid black;
+font-size: 2em;
+color: gray;
+}
+ .titleBoder{
+      width:100%;
+      float:left;
+      border-bottom:1px solid #004f78;
+    }
+.ordercancel{
+cursor: pointer;
+}
+.footer-content{
+  text-align: center;
+   margin: 0px;
+}
+.footer-content p{
+  text-align: center;
+
+}
+.foorter-link{
+  cursor: pointer;
+}
+.foorter-link a:hover{
+    color: #23527c;
+  text-decoration: none;
+}
+.email-footer{
+  border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.email-heading{
+  border-bottom: 1px dotted gray;
+}
+.item-table-row{
+border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: #BDBABA;
+  }
+  .email-signature{
+    font-size: 10pt;
+  }
+ #order-table-info .table{
+    margin-bottom: 0px !important;
+  }
+   #order-table-info{
+    min-height: 300px;
+   }
+   .trackorder{
+        background-color: #1FD1EA;
+    padding: 5px;
+    margin-left: 35%;
+   }
